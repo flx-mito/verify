@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado por se verificar!</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Background animado */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, #7289DA, #99AAB5, #2C2F33, #23272A);
+            background-size: 400% 400%;
+            z-index: -1;
+            animation: gradientBackground 15s ease infinite;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .thank-you-container {
+            background-color: rgba(35, 39, 42, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #7289DA;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #99AAB5;
+            margin-bottom: 2rem;
+        }
+
+        .thank-you-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #7289DA;
+        }
+
+        .back-button {
+            background-color: #7289DA;
+            color: #fff;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-button:hover {
+            background-color: #5a6fb8;
+        }
+
+        /* Estilo para a imagem da loja */
+        .store-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .footer-text {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #99AAB5;
+        }
+
+        .footer-text a {
+            color: #7289DA;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thank-you-container">
+        <div class="thank-you-icon">🎉</div>
+        <h1>Obrigado!</h1>
+        <p>Sua autenticação foi concluída com sucesso. Agradecemos por verificar sua conta!</p>
+
+        <!-- Adicione a imagem da sua loja aqui -->
+        <img src="phantom.jpg" alt="Imagem da loja" class="store-image">
+
+        <button class="back-button" onclick="window.location.href='#';">Voltar para o início</button>
+        <div class="footer-text">
+            <p>Precisa de ajuda? <a href="#">Contato de Suporte</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
