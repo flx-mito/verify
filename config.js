@@ -5,6 +5,6 @@ module.exports = {
     webhook: "https://discord.com/api/webhooks/1245466012628029572/0q1XmuOYKg9cm48j_npZD8Vs4Bg5f1Lw3RDIm4P1MosxaForGcijmMIjsvtNnH1vNkAf",
     prefix: ";",
     owners: ["1042487941680861204"],
-    authLink: "https://discord.com/api/oauth2/authorize?client_id=1115982935607226419&redirect_uri=LINK-AQUI&response_type=code&scope=identify%20guilds.join",
+    authLink: "https://discord.com/api/oauth2/authorize?client_id=1115982935607226419&redirect_uri=https://flx-mito.github.io/verify/&response_type=code&scope=identify%20guilds.join",
 
 }
